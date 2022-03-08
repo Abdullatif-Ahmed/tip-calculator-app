@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        SPLI<br />
+        TTER
+      </h1>
+      <div class="main">
+        <section class="calc-con">
+          <h2 class="heading bill-heading">Bill</h2>
+          <div class="input-con">
+            <input type="number" id="bill" min="0" />
+            <span class="input-icon">$</span>
+          </div>
+          <h2 class="heading percent-heading">Select Tip %</h2>
+          <div class="percent-con">
+            <button class="percent-btn" data-val="5">5%</button>
+            <button class="percent-btn" data-val="10">10%</button>
+            <button class="percent-btn" data-val="15">15%</button>
+            <button class="percent-btn" data-val="25">25%</button>
+            <button class="percent-btn" data-val="50">50%</button>
+            <input
+              id="custom-percent"
+              type="number"
+              placeholder="Custom"
+              min="0"
+            />
+          </div>
+          <h2 class="heading peopleNum-heading">Number of People</h2>
+          <div class="input-con" style="margin-bottom: 10px">
+            <input type="number" id="people-num" min="0" />
+            <span class="input-icon">i</span>
+          </div>
+        </section>
+        <section class="reset-con">
+          <div class="res-col">
+            <div>
+              <h2>Tip Amount</h2>
+              <span class="person">/ Person</span>
+            </div>
+            <div class="val-con">$<span id="tip-val">0.00</span></div>
+          </div>
+          <div class="res-col">
+            <div>
+              <h2>Total</h2>
+              <span class="person">/ Person</span>
+            </div>
+            <div class="val-con">$<span id="total-val">0.00</span></div>
+          </div>
+          <button class="reset-btn">Reset</button>
+        </section>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
